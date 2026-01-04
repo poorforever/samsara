@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://r3ndi2ttyys7"]
+
+[ext_resource type="PackedScene" uid="uid://dqcud2uqsm1bn" path="res://character_body_2d.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://bsew68yn5nmrl" path="res://static_body_2d.tscn" id="2_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://cfnf21ryeaomt" path="res://boss.tscn" id="3_feb5d"]
+
+[node name="Game" type="Node2D"]
+position = Vector2(-1, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_80nbo")]
+position = Vector2(205, 117)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(1, -1)
+
+[node name="Boss" parent="." instance=ExtResource("3_feb5d")]
